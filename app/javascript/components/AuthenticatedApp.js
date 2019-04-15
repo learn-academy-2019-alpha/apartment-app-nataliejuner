@@ -3,18 +3,15 @@
 : import {
 :   BrowserRouter as Router,
 :   Route,
-:   Switch,
 : } from 'react-router-dom'
 :
-: import Bikes from './pages/Bikes'
+: import Apartments from './pages/Apartments'
 : class AuthenticatedApp extends React.Component {
 :   render () {
 :     return (
 :       <Router>
 :         <div>
-:           <Switch>
-:             <Route path="/bikes" component={Bikes} />
-:           </Switch>
+:             <Route path="/Apartments" component={Apartments} />
 :         </div>
 :       </Router>
 :     );
