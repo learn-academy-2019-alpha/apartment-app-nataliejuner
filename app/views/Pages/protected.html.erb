@@ -1,1 +1,4 @@
-<h1>Protected</h1>
+<%= link_to "Logout", destroy_user_session_path, method: :delete %>
+<%= link_to "All Apartments" %>
+<%= link_to "Create New Apartment" %>
+<%= react_component ("AuthenticatedApp"), {current_user: current_user} %>
