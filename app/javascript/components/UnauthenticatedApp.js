@@ -10,7 +10,7 @@
      const { apartments } = this.props
      return (
        <React.Fragment>
-       <a href="/users/sign_in">Login</a>
+       <h1> All Apartments</h1>
         <Router>
           <Switch>
              <Route to="/apartments" render={() => (

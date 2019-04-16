@@ -18,7 +18,7 @@ class ApartmentsPage extends React.Component {
   }
 
   getApartments = ()=>{
-    allApartments()
+    allApartments(this.props.all_apartments)
     .then((apartments)=>{
       this.setState({ apartments })
     })
@@ -32,10 +32,10 @@ class ApartmentsPage extends React.Component {
   render () {
     const{ apartments } = this.state
     const{ current_user } = this.props
+    const { user_apartments } = this.props
     return (
       <React.Fragment>
-        <h1>Apartments</h1>
-        <Apartments apartments={apartments} current_user={current_user} />
+        <Apartments apartments={apartments} current_user={current_user} user_apartments={user_apartments}/>
       </React.Fragment>
     );
   }

@@ -12,7 +12,8 @@ class Apartments extends React.Component {
           {apartments.map((apartment)=>{
             return(
               <li key={apartment.id}>
-                {apartment.street_num} {apartment.street_name} {apartment.city} {apartment.postal_code} {apartment.state} {apartment.country}
+               <a href={"/apartments/" + apartment.id}><strong>{apartment.street_num} {apartment.street_name}</strong></a><br/>
+                 {apartment.city} {apartment.postal_code} {apartment.state} {apartment.country}
               </li>
             )
           })}
